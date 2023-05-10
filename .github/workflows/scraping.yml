@@ -6,7 +6,7 @@ on:
       - .github/workflows/scraping.yml
   workflow_dispatch:
   schedule:
-    - cron: '*/ * * * *'
+    - cron: '*/1 * * * *'
       
 jobs:
   scheduled:
