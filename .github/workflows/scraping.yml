@@ -17,7 +17,7 @@ jobs:
       - name: webhook
         uses: githubocto/flat@v2
         with:
-          http_url: https://play.svix.com/api/v1/in/e_XU356O53hjkT27oM7Zwd0jkpjMp/
+          http_url: https://play.svix.com/view/e_XU356O53hjkT27oM7Zwd0jkpjMp/2PbVvbPMA7XUrV4ZWozrTsVad89
           headers: '{"repository": "githubocto/flat@v2"}'
           download_filename: newest.json
 
