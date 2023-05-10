@@ -1,4 +1,4 @@
-name: Scraping Data Import
+name: Scraping Data Import webhook
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - .github/workflows/scraping.yml
   workflow_dispatch:
   schedule:
-    - cron: '*/60 * * * *'
+    - cron: '*/ * * * *'
       
 jobs:
   scheduled:
@@ -14,8 +14,8 @@ jobs:
     steps:
       - name: check out repo
         uses: actions/checkout@v2
-      - name: Fetch newest
+      - name: webhook
         uses: githubocto/flat@v2
         with:
-          http_url: https://lobste.rs/newest.json
-          downloaded_filename: newest.json
+          http_url: https://play.svix.com/api/v1/in/e_XU356O53hjkT27oM7Zwd0jkpjMp/
+
